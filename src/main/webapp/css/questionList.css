@@ -1,0 +1,171 @@
+@charset "UTF-8";
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  height: 80px;
+  margin:0;
+  padding:0 40px;
+  background-color: #51587b;
+  color: #fff;
+}
+
+.header-contents{
+	float:right;
+}
+
+.header-contents form{
+	margin-top:25px;
+}
+
+
+header > h1{
+	float:left;
+	text-align: center;
+}	
+
+.top-button{
+  width:90px;
+  height: 30px;
+  background-color: white;
+  color: #51587b;
+  border: 2px solid white; 
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.top-button:hover {
+  animation: colorChange 0.5s;
+  animation-fill-mode: forwards;
+}
+
+@keyframes colorChange {
+  0% {
+    background-color: white;
+    color:#51587b;
+  }
+  5%{
+	color:#51587b;
+  }
+  85%{
+	background-color:#51587b;
+  }
+  100% {
+    background-color:#51587b;
+    color:white;
+    font-weight:bold;
+  }
+}
+
+/*main部分のCSS*/
+main {
+  margin: 80px 300px 200px 300px;
+  height:400px;
+  background-color: #fff;
+}
+
+
+.table{
+  overflow-y: auto;
+  max-height: 300px; /* スクロールする高さを指定 */
+}
+
+.table_layout {
+  width: 100%;
+  table-layout: fixed;
+  border-collapse: collapse; /* セルの境界線を結合する */
+}
+
+.table_layout th,
+.table_layout td {
+  padding: 10px; /* セルの内側の余白を追加 */
+  text-align: center; /* セル内のテキストを中央揃え */
+}
+
+.table_layout th {
+  background-color: #f2f2f2; /* ヘッダーセルの背景色 */
+  font-weight: bold; /* ヘッダーセルの文字を太字に */
+  border-bottom: 3px double black; /* ヘッダ行の下線 */
+}
+
+.th0 {
+  width: 15%;
+}
+
+.th1 {
+  width: 15%;
+}
+
+.th2 {
+  width: 65%;
+}
+
+.th3 {
+  width: 5%;
+}
+
+/* リンクのスタイルを変更 */
+.th3 a {
+  text-decoration: none; /* リンクの下線をなくす */
+  color: #0000ff; /* リンクの色を設定 */
+}
+
+/* ホバー時のリンクのスタイルを変更 */
+.th3 a:hover {
+  text-decoration: underline; /* ホバー時の下線を追加 */
+  color: #ff0000; /* ホバー時のリンクの色を変更 */
+}
+
+.submit-button{
+	text-align: center;
+	margin-top:50px;
+}
+
+.button {
+  /* ボタンのスタイル */
+  flex: 1;
+  font-size: 15px;
+  width: 180px;
+  height: 50px;
+  position: relative;
+  background-color: white;
+  color: #51587b;
+  border: 2px solid #51587b; 
+  border-radius: 8px;
+}
+
+.button:hover {
+  animation: fontChange 0.5s;
+  animation-fill-mode: forwards;
+  cursor: pointer;
+}
+
+
+@keyframes fontChange {
+  0% {
+    background-color: white;
+    color:#51587b;
+  }
+  5%{
+	color:#51587b;
+  }
+  85%{
+	background-color:#51587b;
+  }
+  100% {
+    background-color:#51587b;
+    color:white;
+    font-weight:bold;
+  }
+}
+
+
+footer {
+  background-color: #51587b;
+  color: #fff;
+  padding: 10px;
+  text-align: center;
+}

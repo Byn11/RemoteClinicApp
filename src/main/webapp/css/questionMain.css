@@ -1,0 +1,175 @@
+@charset "UTF-8";
+
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  height: 80px;
+  margin:0;
+  padding:0 40px;
+  background-color: #51587b;
+  color: #fff;
+}
+
+.header-contents{
+	float:right;
+}
+
+.header-contents form{
+	margin-top:25px;
+}
+
+.top{
+  width:90px;
+  height: 30px;
+  background-color: white;
+  color: #51587b;
+  border: 2px solid white; 
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.top:hover {
+  animation: colorChange 0.5s;
+  animation-fill-mode: forwards;
+}
+
+@keyframes colorChange {
+  0% {
+    background-color: white;
+    color:#51587b;
+  }
+  5%{
+	color:#51587b;
+  }
+  85%{
+	background-color:#51587b;
+  }
+  100% {
+    background-color:#51587b;
+    color:white;
+    font-weight:bold;
+  }
+}
+
+header > h1{
+	float:left;
+	text-align: center;
+}	
+
+/* mainのスタイル */
+main {
+  margin: 100px 200px;
+  height:auto;
+  padding: 20px;
+  background-color: #fff;
+  box-shadow: 0 2px 4px #51587b;
+}
+
+
+h2 {
+  margin-top: 0;
+  text-align: center;
+}
+
+form {
+  margin-top: 20px;
+}
+
+/* フォーム要素のスタイル */
+label {
+  display: block;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+select{
+  width: 25%;
+  padding: 10px;
+  margin:0 20px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  resize: vertical;
+  font-size: 16px;
+}
+
+input[type="text"] {
+  width:50%;
+  padding: 10px;
+  margin:0 20px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  resize: vertical;
+  font-size: 16px;
+}
+
+textarea {
+  width: 95%;
+  padding: 10px;
+  margin:0 20px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  resize: vertical;
+  font-size: 20px;
+}
+
+.radio_type{
+	margin-left:20px;
+}
+
+input[type="radio"]{
+	margin-right:15px;
+}
+
+.submit_button{
+	text-align: center;
+	margin: 40px auto 0 auto;
+}
+
+.button {
+  /* ボタンのスタイル */
+  flex: 1;
+  font-size: 15px;
+  width: 180px;
+  height: 50px;
+  position: relative;
+  background-color: white;
+  color: #51587b;
+  border: 2px solid #51587b; 
+  border-radius: 8px;
+}
+
+.button:hover {
+  animation: fontChange 0.5s;
+  animation-fill-mode: forwards;
+  cursor: pointer;
+}
+
+
+@keyframes fontChange {
+  0% {
+    background-color: white;
+    color:#51587b;
+  }
+  5%{
+	color:#51587b;
+  }
+  85%{
+	background-color:#51587b;
+  }
+  100% {
+    background-color:#51587b;
+    color:white;
+    font-weight:bold;
+  }
+}
+
+footer {
+  background-color: #51587b;
+  color: #fff;
+  padding: 10px;
+  text-align: center;
+}

@@ -1,0 +1,126 @@
+@charset "UTF-8";
+
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  height: 80px;
+  margin:0;
+  padding:0 40px;
+  background-color: #51587b;
+  color: #fff;
+  
+}
+
+.header-contents{
+	width:200px;
+	height:100%;
+	float:right;
+	text-align: center;
+}
+
+.contents{
+	display: inline;
+}
+
+.return-link .img-link{
+	height:100%;
+	text-align: center;
+}
+
+.return-link{
+	padding-bottom: 20px;
+}
+
+.return-link a{
+	color: #fff;
+}
+
+header > h1{
+	float:left;
+	text-align: center;
+}	
+
+
+main {
+  margin: 100px 300px;
+  height:400px;
+  background-color: #fff;
+}
+
+h2 {
+	text-align:center
+}
+
+h3{
+	text-align:center
+}
+
+.button-container {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  margin-top: 50px;
+}
+
+.button-profile{
+	margin:100px auto;
+	text-align: center;
+}
+
+#output4 .output{
+	text-align: center;
+}
+
+.button {
+  /* ボタンのスタイル */
+  flex: 1;
+  font-size: 15px;
+  width: 180px;
+  height: 50px;
+  position: relative;
+  background-color: white;
+  color: #51587b;
+  border: 2px solid #51587b; 
+  border-radius: 8px;
+}
+
+.button:hover {
+  animation: fontChange 0.5s;
+  animation-fill-mode: forwards;
+  cursor: pointer;
+}
+
+
+@keyframes fontChange {
+  0% {
+    background-color: white;
+    color:#51587b;
+  }
+  5%{
+	color:#51587b;
+  }
+  85%{
+	background-color:#51587b;
+  }
+  100% {
+    background-color:#51587b;
+    color:white;
+    font-weight:bold;
+  }
+}
+
+
+.output{
+	width:200px;
+}
+
+footer {
+  background-color: #51587b;
+  color: #fff;
+  padding: 10px;
+  text-align: center;
+}

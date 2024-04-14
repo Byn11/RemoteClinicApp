@@ -1,0 +1,19 @@
+CREATE TABLE CLINIC(
+DEPARTMENT_ID INT PRIMARY KEY,
+NAME VARCHAR(50));
+
+INSERT INTO CLINIC
+VALUES
+(001,'内科'),
+(002,'外科'),
+(003,'皮膚科'),
+(004,'婦人科');
+
+
+
+INSERT INTO CLINIC
+VALUES
+(001,'内科'),
+(002,'心療内科'),
+(003,'口腔外科'),
+(004,'婦人科');

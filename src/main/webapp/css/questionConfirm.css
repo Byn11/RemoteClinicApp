@@ -1,0 +1,154 @@
+@charset "UTF-8";
+
+
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  height: 80px;
+  margin:0;
+  padding:0 40px;
+  background-color: #51587b;
+  color: #fff;
+}
+
+.header-contents{
+	float:right;
+}
+
+.header-contents form{
+	margin-top:25px;
+}
+
+.top{
+  width:90px;
+  height: 30px;
+  background-color: white;
+  color: #51587b;
+  border: 2px solid white; 
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.top:hover {
+  animation: colorChange 0.5s;
+  animation-fill-mode: forwards;
+}
+
+@keyframes colorChange {
+  0% {
+    background-color: white;
+    color:#51587b;
+  }
+  5%{
+	color:#51587b;
+  }
+  85%{
+	background-color:#51587b;
+  }
+  100% {
+    background-color:#51587b;
+    color:white;
+    font-weight:bold;
+  }
+}
+
+header > h1{
+	float:left;
+	text-align: center;
+}	
+
+
+/* mainのスタイル */
+main {
+  margin: 100px 200px;
+  height:600px;
+  padding: 20px;
+  background-color: #fff;
+}
+
+.main_container{
+	margin: 0 65px;
+}
+
+
+h2 {
+  margin-top: 0;
+  text-align: center;
+}
+
+p{
+	font-size: 20px;;
+}
+
+.text-content {
+  border: 1px solid rgb(192, 192, 192);
+  width: 95%;
+  padding: 10px;
+  margin: 0 20px;
+  height: auto;
+  word-wrap: break-word; /* 長い単語を折り返す */
+  white-space: pre-wrap; /* 改行を維持 */
+}
+
+.text-content p {
+  margin: 0;
+}
+
+
+
+
+main form {
+  margin-top: 60px;
+}
+main .submit_button{
+	text-align: center;
+}
+
+main .button {
+  /* ボタンのスタイル */
+  flex: 1;
+  font-size: 15px;
+  width: 180px;
+  height: 50px;
+  position: relative;
+  background-color: white;
+  color: #51587b;
+  border: 2px solid #51587b; 
+  border-radius: 8px;
+}
+
+main .button:hover {
+  animation: fontChange 0.5s;
+  animation-fill-mode: forwards;
+  cursor: pointer;
+}
+
+
+@keyframes fontChange {
+  0% {
+    background-color: white;
+    color:#51587b;
+  }
+  5%{
+	color:#51587b;
+  }
+  85%{
+	background-color:#51587b;
+  }
+  100% {
+    background-color:#51587b;
+    color:white;
+    font-weight:bold;
+  }
+}
+
+footer {
+  background-color: #51587b;
+  color: #fff;
+  padding: 10px;
+  text-align: center;
+}

@@ -1,0 +1,163 @@
+@charset "UTF-8";
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  height: 80px;
+  margin:0;
+  padding:0 40px;
+  background-color: #51587b;
+  color: #fff;
+}
+
+.header-contents{
+	float:right;
+}
+
+.header-contents form{
+	margin-top:25px;
+}
+
+.top{
+  width:90px;
+  height: 30px;
+  background-color: white;
+  color: #51587b;
+  border: 2px solid white; 
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.top:hover {
+  animation: colorChange 0.5s;
+  animation-fill-mode: forwards;
+}
+
+@keyframes colorChange {
+  0% {
+    background-color: white;
+    color:#51587b;
+  }
+  5%{
+	color:#51587b;
+  }
+  85%{
+	background-color:#51587b;
+  }
+  100% {
+    background-color:#51587b;
+    color:white;
+    font-weight:bold;
+  }
+}
+
+header > h1{
+	float:left;
+	text-align: center;
+}	
+
+
+/* mainのスタイル */
+main {
+  margin: 100px 200px;
+  height:600px;
+  padding: 20px;
+  background-color: #fff;
+}
+
+/*医者系のCSS*/
+.container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.doctor-card {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+  background-color: #f7f7f7;
+  border-radius: 8px;
+  padding: 20px;
+}
+
+.doctor-card img {
+  width: 120px;
+  height: 120px;
+  object-fit: cover;
+  border-radius: 50%;
+  margin-right: 20px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.doctor-card .info {
+  flex: 1;
+}
+
+.doctor-card h2 {
+  margin: 0;
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.doctor-card p {
+  margin: 0;
+  font-size: 16px;
+  color: #777777;
+}
+
+
+
+.submit-button{
+	text-align: center;
+	margin-top:50px;
+}
+
+.button {
+  /* ボタンのスタイル */
+  flex: 1;
+  font-size: 15px;
+  width: 180px;
+  height: 50px;
+  position: relative;
+  background-color: white;
+  color: #51587b;
+  border: 2px solid #51587b; 
+  border-radius: 8px;
+}
+
+.button:hover {
+  animation: fontChange 0.5s;
+  animation-fill-mode: forwards;
+  cursor: pointer;
+}
+
+
+@keyframes fontChange {
+  0% {
+    background-color: white;
+    color:#51587b;
+  }
+  5%{
+	color:#51587b;
+  }
+  85%{
+	background-color:#51587b;
+  }
+  100% {
+    background-color:#51587b;
+    color:white;
+    font-weight:bold;
+  }
+}
+
+
+footer {
+  background-color: #51587b;
+  color: #fff;
+  padding: 10px;
+  text-align: center;
+}
